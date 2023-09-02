@@ -1,0 +1,74 @@
+#!/bin/bash
+
+echo ""
+echo "####################################"
+echo "#  Extracing GSI                   #"
+echo "####################################"
+echo "#   Please Wait........            #"
+echo "####################################"
+echo ""	
+
+mv ./temp/*.xz ./temp/system.img.xz
+xz -d ./temp/system.img.xz
+rm -rf ./temp/*.xz
+mv ./temp/*.img ./temp/system.img
+
+
+echo ""
+echo "####################################"
+echo "#  Checking the system image type  #"
+echo "####################################"
+echo "#                                  #"
+echo "####################################"
+echo ""	
+
+
+# Function to check if an image file is in raw format
+is_raw() {
+  file="./temp/system.img"
+  # Use the 'file' command to check the file format
+  file_type=$(file -b "$file")
+  if [[ "$file_type" == *"Android sparse image"* ]]; then
+    return 1  # Not raw format
+  else
+    return 0  # Raw format
+  fi
+}
+
+# Function to convert an image to raw format using simg2img
+convert_to_raw() {
+  ./bin/simg2img "./temp/system.img" "./temp/system.raw"
+}
+
+# Check if the provided image is already in raw format
+if is_raw "$input_image"; then
+    echo ""
+	echo "####################################"
+	echo "#    The image is already in       #"
+	echo "#    raw format                    #"
+	echo "####################################"
+	echo "#                                  #"
+	echo "####################################"
+	echo ""	
+
+else
+    echo ""
+	echo "####################################"
+	echo "#    Converting the image to       #"
+	echo "#    raw format....                #"
+	echo "####################################"
+	echo "# Please Wait........              #"
+	echo "####################################"
+    echo ""
+  convert_to_raw 
+  rm -rf ./temp/system.img
+  mv temp/system.raw temp/system.img
+fi
+    echo ""
+	echo "####################################"
+	echo "#    Convert Succesfull            #"
+	echo "####################################"
+	echo "#                                  #"
+	echo "####################################"
+    echo ""
+./size
