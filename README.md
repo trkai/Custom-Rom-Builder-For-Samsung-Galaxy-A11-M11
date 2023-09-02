@@ -12,7 +12,9 @@ You MUST use PHH based GSIs above android 10
 You can use Erfan/Nippon GSIs android 10/11/12 only
 Still tested only MIUI android 11/OOS 11/PIXEL 12
 
-eg:-
+How to Use this
+
+
 if you use link form sourceforge.net ,
 copy downlad link from your gsi then you will get link like this,
  ```sh
