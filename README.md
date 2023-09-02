@@ -1,4 +1,4 @@
-<b>Custom Rom Builder For Samsung Galaxy A01/M01</b>
+<h1><b>Custom Rom Builder For Samsung Galaxy A01/M01</b></h1>
 
 This tool can create full flashble zip with any gsi
 This tool support both arm32 and arm64
