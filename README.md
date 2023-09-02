@@ -29,6 +29,7 @@ https://sourceforge.net/projects/andyyan-gsi/files/lineage-19.x/lineage-19.1-202
  ```sh
 https://sourceforge.net/projects/andyyan-gsi/files/lineage-19.x/lineage-19.1-20230715-UNOFFICIAL-a64_bgN.img.xz
  ```
+<br>⚬ the link must be end with .xz .img .7z .gz</br>
 <br>⚬ then add the arch as 32 or 64</br>
 
 <br>⚬ then add the gsi name it should be [rom_name]_[version]_[sdm430]_[arm64_or_32]_[gapps_or_vanila]<br>
