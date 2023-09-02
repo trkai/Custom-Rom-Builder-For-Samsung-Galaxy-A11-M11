@@ -15,9 +15,9 @@ Still tested only MIUI android 11/OOS 11/PIXEL 12
 eg:-
 if you use link form sourceforge.net ,
 copy downlad link from your gsi then you will get link like this,
-
+ ```sh
 https://sourceforge.net/projects/andyyan-gsi/files/lineage-19.x/lineage-19.1-20230715-UNOFFICIAL-a64_bgN.img.xz/download
-
+ ```
 then delete the /download then it will be like below
 
 https://sourceforge.net/projects/andyyan-gsi/files/lineage-19.x/lineage-19.1-20230715-UNOFFICIAL-a64_bgN.img.xz
