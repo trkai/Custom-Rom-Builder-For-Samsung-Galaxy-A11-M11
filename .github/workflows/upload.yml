@@ -20,7 +20,7 @@ on:
         default: 'LineageOS_19.1_SDM439_ARM32_Gapps'                
 
 jobs:
-  run_script:
+  Build:
     runs-on: ubuntu-latest
 
     steps:
