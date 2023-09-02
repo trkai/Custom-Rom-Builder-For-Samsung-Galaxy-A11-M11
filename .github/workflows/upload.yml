@@ -1,4 +1,4 @@
-name: Run Shell Script
+name: Custom Rom Builder Samsung Galaxy A01/M01
 
 on:
   push:
