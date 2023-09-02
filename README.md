@@ -15,6 +15,11 @@
 
 # How to Use this
 
+<br>⚬ Fork into your github and use via github actions</br>
+<br>⚬ Add Direct link of GSI</br>
+<br>⚬ Add Architecuter</br>
+<br>⚬ Add Rom Name</br>
+
 if you use link form sourceforge.net ,
 <br>copy downlad link from your gsi then you will get link like this,</br>
  ```sh
@@ -30,5 +35,4 @@ https://sourceforge.net/projects/andyyan-gsi/files/lineage-19.x/lineage-19.1-202
 like this LineageOS_19.1_SDM439_ARM32_Gapps
 
 
-What you need
 
