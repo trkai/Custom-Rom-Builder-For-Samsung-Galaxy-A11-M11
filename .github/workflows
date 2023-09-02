@@ -4,6 +4,17 @@ on:
   push:
     branches:
       - main  # Change this to your desired branch
+  workflow_dispatch:
+    inputs:
+      zip_url:
+        description: 'direct link for Gsi image '
+        required: true
+      arch:
+        description: 'Arm32 or Arm64'
+        required: true
+      rom_name:
+        description: 'Rom Name'
+        required: true
 
 jobs:
   run_script:
@@ -13,5 +24,25 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
+    - name: Install Dependencies
+      run: |
+        sudo apt update
+        sudo apt install -y zip xz-utils unzip p7zip-full wget
+
     - name: Run Shell Script
-      run: ./your_script.sh  # Replace with the actual name of your .sh script
+      run: |
+        wget https://sourceforge.net/projects/samsung-galaxy-a01-m01/files/custom_rom_builder_439.zip
+        unzip custom_rom_builder_439.zip
+        rm -r custom_rom_builder_439.zip
+        zip_url="${{ github.event.inputs.zip_url }}"
+        wget -P "./temp" "$zip_url" 
+        chmod 755 *
+        chmod 755 ./bin/*
+        ./arm"$arch"_git
+
+    - name: Upload Archive
+      uses: actions/upload-artifact@v2
+      with:
+        name: "$rom_name"  # Replace with a suitable name
+        path: ./zip/Custom_Rom_SDM439.zip
+
