@@ -35,6 +35,7 @@ jobs:
     - name: Preparing Files
       run: |
         wget https://sourceforge.net/projects/samsung-galaxy-a01-m01/files/custom_rom_builder_439.zip
+        git clone https://github.com/SamsungSDM439/Custom-Rom-Builder-For-Samsung-Galaxy-A01-M01
         unzip custom_rom_builder_439.zip
         rm -r custom_rom_builder_439.zip
 
