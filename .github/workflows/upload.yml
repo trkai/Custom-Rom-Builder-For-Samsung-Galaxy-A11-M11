@@ -34,10 +34,14 @@ jobs:
 
     - name: Run Shell Script
       run: |
-        wget https://sourceforge.net/projects/samsung-galaxy-a01-m01/files/custom_rom_builder_439.zip
+        echo "Preparing Files" 
+        wget -q https://sourceforge.net/projects/samsung-galaxy-a01-m01/files/custom_rom_builder_439.zip
+        echo "Unziping Files"        
         unzip custom_rom_builder_439.zip
         rm -r custom_rom_builder_439.zip
-        wget -P "./temp" ${{ github.event.inputs.GSI }} 
+        echo "Downloading your Gsi"        
+        wget -q -P "./temp" ${{ github.event.inputs.GSI }} 
+        echo "Setting Permissions"               
         chmod 755 *
         chmod 755 ./bin/*
         ./arm${{ github.event.inputs.ARCH }}_git
