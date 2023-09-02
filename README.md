@@ -1,10 +1,9 @@
 <b>Custom Rom Builder For Samsung Galaxy A01/M01</b>
 
-This tool can create full flashble zip with any gsi
-This tool support both arm32 and arm64
+<br>This tool can create full flashble zip with any gsi</br>
+<br>This tool support both arm32 and arm64</br>
 
-<b><u>If you want to build arm32 custom rom</u></b>
-
+<b>If you want to build arm32 custom rom</b>
 <br>You MUST use PHH based GSI above android 12</br>
 You can use GSIs Upto 3GB due limitaion of 
 
