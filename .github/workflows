@@ -1,0 +1,17 @@
+name: Run Shell Script
+
+on:
+  push:
+    branches:
+      - main  # Change this to your desired branch
+
+jobs:
+  run_script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Run Shell Script
+      run: ./your_script.sh  # Replace with the actual name of your .sh script
