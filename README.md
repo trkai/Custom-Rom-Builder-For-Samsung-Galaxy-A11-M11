@@ -4,10 +4,11 @@
 ⚬ This tool support both arm32 and arm64
 
 <b>If you want to build arm32 custom rom</b>
+
 <br>⚬ You MUST use PHH based GSI above android 12</br>
 ⚬ You can use GSIs Upto 3GB due limitaion of 
 
-If you want to build arm32 custom rom,
+If you want to build arm64 custom rom,
 
 <br>⚬ You MUST use PHH based GSIs above android 10</br>
 <br>⚬ You can use Erfan/Nippon GSIs android 10/11/12 only</br>
