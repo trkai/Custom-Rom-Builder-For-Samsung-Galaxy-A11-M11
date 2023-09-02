@@ -21,17 +21,17 @@
 <br>⚬ Add Rom Name</br>
 
 if you use link form sourceforge.net ,
-<br>copy downlad link from your gsi then you will get link like this,</br>
+<br>⚬ copy downlad link from your gsi then you will get link like this,</br>
  ```sh
 https://sourceforge.net/projects/andyyan-gsi/files/lineage-19.x/lineage-19.1-20230715-UNOFFICIAL-a64_bgN.img.xz/download
  ```
-<br>then delete the /download then it will be like below</br>
+<br>⚬ then delete the /download then it will be like below</br>
  ```sh
 https://sourceforge.net/projects/andyyan-gsi/files/lineage-19.x/lineage-19.1-20230715-UNOFFICIAL-a64_bgN.img.xz
  ```
-<br>then add the arch as 32 or 64</br>
+<br>⚬ then add the arch as 32 or 64</br>
 
-<br>then add the gsi name it should be [rom_name]_[version]_[sdm430]_[arm64_or_32]_[gapps_or_vanila]<br>
+<br>⚬ then add the gsi name it should be [rom_name]_[version]_[sdm430]_[arm64_or_32]_[gapps_or_vanila]<br>
 like this LineageOS_19.1_SDM439_ARM32_Gapps
 
 
