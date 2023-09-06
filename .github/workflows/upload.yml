@@ -11,7 +11,7 @@ on:
         required: true
         default: 'https://sourceforge.net/projects/andyyan-gsi/files/lineage-19.x/lineage-19.1-20230715-UNOFFICIAL-a64_bgN.img.xz'        
       ARCH:
-        description: 'Arm32 only. Arm64 sitll not Supported.'
+        description: 'ARM64 or ARM32?'
         required: true
         default: '32'                
       NAME:
