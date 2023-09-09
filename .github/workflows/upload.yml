@@ -1,4 +1,4 @@
-name: Custom Rom Builder Samsung Galaxy A01/M01
+name: Custom Rom Builder Samsung Galaxy A11/M11
 
 on:
   push:
