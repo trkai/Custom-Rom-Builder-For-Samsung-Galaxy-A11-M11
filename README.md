@@ -37,9 +37,10 @@ https://sourceforge.net/projects/andyyan-gsi/files/lineage-19.x/lineage-19.1-202
 <br>2. Add Architecuter</br>
 <br>⚬ then add the arch as 32 or 64</br>
 
-<br>3. Add Rom Name</br>
+<br>3. Add Rom Name<br>⚬
 <br>⚬ then add the gsi name it should be [rom_name]_[version]_[sdm430]_[arm64_or_32]_[gapps_or_vanila]<br>
 like this LineageOS_19.1_SDM439_ARM32_Gapps
 
 
-
+<br>⚬Telegram<br>⚬
+<br>https://t.me/samsung_galaxy_m01_a01_m11_a11<br>⚬
