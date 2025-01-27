@@ -9,7 +9,7 @@ on:
       GSI:
         description: 'direct link for Gsi image '
         required: true
-        default: 'https://sourceforge.net/projects'        
+        default: 'https://sourceforge.net/projects/andyyan-gsi/files/lineage-19.x/lineage-19.1-20230715-UNOFFICIAL-a64_bgN.img.xz'        
       ARCH:
         description: 'ARM64 or ARM32?'
         required: true
